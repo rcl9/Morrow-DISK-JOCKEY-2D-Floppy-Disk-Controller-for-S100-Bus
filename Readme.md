@@ -10,20 +10,20 @@ The photos above show my Morrow DJ2D controller card (Model B Rev 2) and its ass
 
 In this repository we will cover these topics:
 
-- Retro-fitting the 1981 Morrow DJ2D card by replacing its tantalum capacitors, replacing the 12v regulator and adding a new massive heatsink to the main 5v regulator.
-- Recapping all of the capacitors in my related hardware
+- Retro-fitting the 1981 Morrow DJ2D card by replacing its tantalum capacitors, replacing the 12v regulator and adding a new large heatsink to the main 5v regulator.
+- Recapping all of the capacitors in my related hardware.
 - An explanation of how the Morrow DJ2D card in the Exidy Sorcerer was made to run in a stable manner.
 - How to connect the Morrow DJ2D Card to a HxC Floppy Emulator via two different "50pin to 36pin" adapter boards.
-- The capture and preservation of the two PROM chips on the Morrow DJ2D card
-- How and why the "Stepping Rate" was changed in the 2716 EPROM
-- A capture of the original 24k CP/M Distribution Disk that came with the Morrow DISCUS 2D system. 
-- How system tracks are laid out for the Morrow DJ2D system
-- My 'diskdef' Definitions For 'CP/M Tools' and 'Modified CP/M Tools'
+- The capture and preservation of the two PROM chips on the Morrow DJ2D card.
+- How and why the "Stepping Rate" was changed in the 2708 EPROM.
+- A capture of the original 24k CP/M distribution disk that came with the Morrow DISCUS 2D system. 
+- How system tracks are laid out for the Morrow DJ2D system.
+- My '*diskdef*' definitions For '*CP/M Tools*' and '*Modified CP/M Tools*'.
 
 ## Restoring the System to "Fully Operational Status"
 
 I went through a multi-month process to carefully restore my 1979 Exidy Sorcerer I, Exidy S-100 box, my various S-100 cards (in particular the DJ2D card and my 
-1983-era [Light Speed 100](<https://github.com/rcl9/Integration-of-the-1983-DRC-Light-Speed-100-RAMdisk-S100-Board-With-Exidy-Sorcerer-CPM-2.2>) (LS-100) 256k S-100 RAMdisk board) as well as my six 8" floppy drives ( Calcomp Model 143M DSDD (2), Siemens FDD100 SSDD (3) and Shugart SA801R ).
+1983-era [Light Speed 100](<https://github.com/rcl9/Integration-of-the-1983-DRC-Light-Speed-100-RAMdisk-S100-Board-With-Exidy-Sorcerer-CPM-2.2>) (LS-100) 256k S-100 RAMdisk board) as well as my six 8" floppy drives (Calcomp Model 143M DSDD (2), Siemens FDD100 SSDD (3) and Shugart SA801R ).
 
 This is a short list of what I did in this restoration process:
 
@@ -31,7 +31,7 @@ This is a short list of what I did in this restoration process:
 
 - Exidy Sorcerer I: a replacement [switched mode PSU](<https://github.com/rcl9/Exidy-Sorcerer-New-Power-Supply>) and all tantalums were replaced with equivalents.
 
--Exidy "Ram-Pac" cartridge: in the past I had turned the Exidy 8k Rom-Pac into a 4K Ram-Pac to increase the memory in the computer from 48K to 52k. I replaced the tantalums and also replaced the aging 2K static RAM chips. 
+- Exidy "Ram-Pac" cartridge: in the past I had turned the Exidy 8k Rom-Pac into a 4K Ram-Pac to increase the memory in the computer from 48K to 52k. I replaced the tantalums and also replaced the aging 2K static RAM chips. 
 
 - Exidy S-100 Box: 4700uf (35v, 2), 30000uf (25v, 1) and 6.8uf (25v, 2). I chose to keep its original linear power supply rather than change over to switched mode regulators, given its lower overall power requirements. 
 
@@ -50,13 +50,13 @@ This is a short list of what I did in this restoration process:
 </div>
 
 <div style="text-align:center">
-<img src="/Images/Completed recapping of Siemens FDD100 drives.webp" alt="" style="width:60%; height:auto;">
+<img src="/Images/Completed recapping of Siemens FDD100 drives.webp" alt="" style="width:75%; height:auto;">
 </div>
 
-- Shugart SA801R drive power supply: 5600uf (50v), 4700uf (25v), 470uf (25v), 5.6uf (50v) and 6.8uf (5v). This floppy drive has been 100% reliably from 1981 to date but I didn't want to take any more chances with the tantalums and electrolytics in its linear power supply. 
+- Shugart SA801R drive power supply: 5600uf (50v), 4700uf (25v), 470uf (25v), 5.6uf (50v) and 6.8uf (5v). This floppy drive has been 100% reliable from 1981 to date but I didn't want to take any more chances with the tantalums and electrolytics in its linear power supply. 
 
 <div style="text-align:center">
-<img src="/Images/Shugart SA801R drive power supply.webp" alt="" style="width:100%; height:auto;">
+<img src="/Images/Shugart SA801R drive power supply.webp" alt="" style="width:75%; height:auto;">
 </div>
 
 - Dual Calcomp Model 143M drives: replacement of the old shared linear power supply with a new Mean Well RD-125B switched mode supply which does +5v at 4.6A and +24v at 4.6A.
@@ -74,15 +74,15 @@ It will probably look confusing from the photos as how I came to create this mul
 - The "Butterfly heatsink" is then attached to the original DJ2D 5v regulator heatsink with a small metal binder clip and some thermal paste. You can also see that I connected the binder clip handle to the "Butterfly heatsink" with a small piece of copper wire to prevent it from shorting out with the motherboard. Also, I had to remove, shorten and then re-attach the two handle arms of the binder clips to work in this setup (which was a real pain!). 
 
 <div style="text-align:center">
-<img src="/Images/Heatsink %231.webp" alt="" style="width:100%; height:auto;">
+<img src="/Images/Heatsink %231.webp" alt="" style="width:75%; height:auto;">
 </div>
 
 <div style="text-align:center">
-<img src="/Images/Heatsink %232.webp" alt="" style="width:100%; height:auto;">
+<img src="/Images/Heatsink %232.webp" alt="" style="width:75%; height:auto;">
 </div>
 
 <div style="text-align:center">
-<img src="/Images/Heatsink %233.webp" alt="" style="width:100%; height:auto;">
+<img src="/Images/Heatsink %233.webp" alt="" style="width:75%; height:auto;">
 </div>
 
 I thought that this was quite a creative solution to a problem which has long plagued this board. Now it runs cool. The only problem with this setup is that it forces the card to sit at the front of the motherboard due to its excessive height. 
@@ -91,7 +91,7 @@ I thought that this was quite a creative solution to a problem which has long pl
 
 **WARNING** If your drives have "sat on the shelf" for a bit of time then I'd highly recommend that you try to manually turn the "Lead Screw" (which positions the heads in the drive via the attached stepper motor) before using the drive to be sure it has not locked up. I've encountered several cases where the screw has locked up in my drives due to age. What happens is that the lead screw shaft gets gummed up within the stepper motor. I've had this happen with my 40+ year old 8in, 5-1/4" and 3.5" drives, as well as the mechanism for a 2000s era CDROM drive. 
 
-I've tend to find that my dual Calcomp Model 143M drives turn freely while my three Siemens FDD100 drives remain difficult to turn. 
+I've tended to find that my dual Calcomp Model 143M drives turn freely while my three Siemens FDD100 drives remain difficult to turn. 
 
 What I chose to do is clean the shaft of the lead screws with a tooth brush and then apply *white lithium grease* to them, carefully worked-in so not to get on the R/W head. I also tried to drip some thin machine oil into the mechanism of the front/back stepper motor but in the ideal world I'd open them up and clean the internals properly (as the core issue at hand to resolve). 
 
@@ -121,12 +121,11 @@ It eventually came down to the following:
 
 ## Connecting the Morrow DJ2D Card to a HxC Floppy Emulator
 
-I had purchased the "[HxC Floppy Emulator](<https://hxc2001.com>) - Revision C - SDCard" in 2015 for use with my Cypher Z80/68000 system which handles 5-1/4" and 8" drives. That worked well. It provides functionality to emulate two 5-1/4" and/or 8" floppy drives. I can attest to the fact that it works very well but you need to be careful which version of firmware is used. 
+I had purchased the [HxC Floppy Emulator](<https://hxc2001.com>) (revision C, SDCard version) in 2015 for use with my [Cypher Z80/68000](<https://github.com/rcl9/Cypher-Z80-68000-Single-Board-Computer-1984-by-Motel-Computers---History-and-Documentation>) system which handles 5-1/4" and 8" drives. That worked well. It provides functionality to emulate two 5-1/4" and/or 8" floppy drives. I can attest to the fact that it works very well but you need to be careful which version of firmware is used. 
 
 After I got the Morrow DJ2D system running in a stable manner I turned my attention to getting it to work with the HxC Floppy Emulator.
 
-1) The first issue at hand was to get a 1:1 system image of a bootable DJ2D disk which could be used as a boot HFE disk image with the HxC emulator. That took several months of work mainly due to the (a) stability issues mentioned above and (2) having to entirely rebuild all of my knowledge and experience of running this system from 40+ years ago. Both of these issues have been solidly resolved. This work resulted in the process I outlined in [this tutorial]<https://github.com/rcl9/How-to-Create-CPM-Boot-Disks-From-Scratch-in-IMG--IMD-and-HFE-File-Formats>)
-   to build new system boot image files from scratch, as well the other tutorial which explains how to build a Morrow system boot disk from [source files](<Morrow DISK JOCKEY 2D CP/M 2.2 "SYSGEN" Recompile From Source Files (For Exidy Sorcerer)>). 
+1) The first issue at hand was to get a 1:1 system image of a bootable DJ2D disk which could be used as a boot HFE disk image with the HxC emulator. That took several months of work mainly due to the (a) stability issues mentioned above and (2) having to rebuild all of my knowledge and experience of running this system from 40+ years ago. Both of these issues have been solidly resolved. This work resulted in the process I outlined in [this tutorial](<https://github.com/rcl9/How-to-Create-CPM-Boot-Disks-From-Scratch-in-IMG--IMD-and-HFE-File-Formats>) to build new system boot image files from scratch, as well the other tutorial which explains how to build a Morrow system boot disk from [source files](<Morrow DISK JOCKEY 2D CP/M 2.2 "SYSGEN" Recompile From Source Files (For Exidy Sorcerer)>). 
 
 2) The second issue was to be careful in my methods and understanding of connecting the old 1981-era 50-pin Shugart cable to the newer 36-pin Shugart connector on the HxC emulator. I have decades of experience doing this with my other computers and hence my slight hesitation. What I ended up doing was:
    
@@ -137,11 +136,11 @@ After I got the Morrow DJ2D system running in a stable manner I turned my attent
 - Both of these adapter boards work very well. This only "gotcha" is that you need to be wary of the "2-sided" jumper. The Morrow DJ2D card cannot determine if a virtual disk in the HxC emulator is single sided or double sided and hence this jumper needs to be manually set. What I've come to do with my generated HxC HFE disk image files is to always make them double-sided. 
 
 <div style="text-align:center">
-<img src="/Images/RCL9's 50pinto36pin adapter board.webp" alt="" style="width:75%; height:auto;">
+<img src="/Images/Building the 50pinto36pin adapter board.webp" alt="" style="width:75%; height:auto;">
 </div>
 
 <div style="text-align:center">
-<img src="/Images/Building the 50pinto36pin adapter board.webp" alt="" style="width:75%; height:auto;">
+<img src="/Images/RCL9's 50pinto36pin adapter board.webp" alt="" style="width:75%; height:auto;">
 </div>
 
 <div style="text-align:center">
@@ -149,12 +148,12 @@ After I got the Morrow DJ2D system running in a stable manner I turned my attent
 </div>
 
 <div style="text-align:center">
-<img src="/Images/Connecting HxC emulator to Sorcerer #2.webp" alt="" style="width:75%; height:auto;">
+<img src="/Images/Connecting HxC emulator to Sorcerer #2.webp" alt="" style="width:40%; height:auto;">
 </div>
 
 ## Capturing the Two PROM Chip Contents
 
-For years I've had wanted to capture the contents of the two old 1970s era PROM chips as a loss of them would cripple the board forever. The Boot PROM had been previously captured by others but not the unique Address PROM (D000 PROM # 8C) as used by the Exidy Sorcerer variation of the Morrow DJ2D card. I figured it was up to me to make that capture for historical posterity. However, I was a bit reluctant to do so just in case I (somehow) came to destroy the chip in the process. 
+For years I've wanted to capture the contents of the two old 1970s era PROM chips on the Morrow DJ2D card, as a loss of them would cripple the board forever. The Boot PROM had been previously captured by others but not the unique Address PROM (D000 PROM # 8C) as used by the Exidy Sorcerer variation of the Morrow DJ2D card. I figured it was up to me to make that capture for historical posterity. However, I was a bit reluctant to do so just in case I (somehow) came to destroy the chip in the process. 
 
 The following image shows how I connected my XGecu T48 EPROM programmer to each PROM chip for reading into the computer:
 
@@ -187,7 +186,7 @@ The three '1F' values are 8080 'RAR' opcodes to do shifts, resulting in a 3.6ms 
 
 Documenting the Morrow DJ2D card would not be complete without a copy of the original 24k CP/M 2.2  boot disk as set up for the Exidy Sorcerer. I am providing a copy of that in the associated [ZIP file](</Original Morrow 24k CPM 2.2 boot disk for Exidy Sorcerer/Original Morrow 24k CPM 2.2 boot disk for Exidy Sorcerer.zip>). 
 
-The ZIP file also contains *cpm24k_SS_CBios3.1.sys* which is a capture of the first two system boot tracks of the 24k distribution disk.  If you are ever having trouble with your Morrow DJ2D system then I'd suggest starting with this simplied 24k system as I had done with my several months of system testing. Please note that it uses non-optimized character I/O and hence it tends to be slow when outting text such as disk directory listings. 
+The ZIP file also contains *cpm24k_SS_CBios3.1.sys* which is a capture of the first two system boot tracks of the 24k distribution disk.  If you are ever having trouble with your Morrow DJ2D system then I'd suggest starting with this simplified 24k system as I had done with my several months of system testing. Please note that it uses non-optimized character I/O and hence it tends to be slow when outputting text such as disk directory listings. 
 
 ## How System Tracks Are Laid Out For the Morrow DJ2D System
 
