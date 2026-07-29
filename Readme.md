@@ -1,9 +1,9 @@
-# Morrow DISK JOCKEY 2D Floppy Disk Controller for S-100 Bus - A Historical Compendium of Technical Information
+# Morrow DISK JOCKEY 2D Floppy Disk Controller for S-100 Bus - A Historical Compendium & Snaphot of Technical Information
 
 This repository was penned to capture my experience, memories and technical information about the early 1980's Morrow DISK JOCKEY 2D 8" floppy disk controller card for the S-100 bus as I was/am using with my Exidy Sorcerer computer. This information would have saved me two months of work if I had it in hand while bringing this system fully online again in recent times. 
 
 <div style="text-align:center">
-<img src="/Images/Morrow DJ2D S-100 controller card.jpg" alt="" style="width:45%; height:auto;">     <img src="/Images/Morrow DJ2D Shugart 800 8in floppy drive.jpg" alt="" style="width:45%; height:auto;">
+<img src="https://github.com/rcl9/Morrow-DJ2D-CPM-22-Recompile-From-Source/raw/main/Images/Morrow%20DJ2D%20S-100%20controller%20card.jpg" alt="" style="width:45%; height:auto;">     <img src="https://github.com/rcl9/Morrow-DJ2D-CPM-22-Recompile-From-Source/raw/main/Images/Morrow%20DJ2D%20Shugart%20800%208in%20floppy%20drive.jpg" alt="" style="width:45%; height:auto;">
 </div>
 
 The photos above show my Morrow DJ2D controller card (Model B Rev 2) and its associated "DISCUS 2D" Shugart 801R 8" Floppy Drive. Purchased July 1981 for US$899 from Mini Micro Mart, Syracuse NY. The firmware ROM is located at D000H and its RAM at D400H. The system is still functional and in active use today. That Shugart drive has turned out to be very reliable over the years and decades! Both have been recently recapped.
@@ -38,19 +38,19 @@ This is a short list of what I did in this restoration process:
 - The six 8" floppy drive controller cards: replacement of the tantalums and some electrolytics. The individual parts list is too long to inline in this document. 
 
 <div style="text-align:center">
-<img src="/Images/Recapping Siemens FDD100 drive controller card.webp" alt="" style="width:100%; height:auto;">
+<img src="/Images/Recapping Siemens FDD100 drive controller card.webp" alt="" style="width:75%; height:auto;">
 </div>
 
 <div style="text-align:center">
-<img src="/Images/Recapping Siemens FDD100.webp" alt="" style="width:100%; height:auto;">
+<img src="/Images/Recapping Siemens FDD100.webp" alt="" style="width:75%; height:auto;">
 </div>
 
 <div style="text-align:center">
-<img src="/Images/Recapping Siemens FDD100 drives.webp" alt="" style="width:100%; height:auto;">
+<img src="/Images/Recapping Siemens FDD100 drives.webp" alt="" style="width:75%; height:auto;">
 </div>
 
 <div style="text-align:center">
-<img src="/Images/Completed recapping of Siemens FDD100 drives.webp" alt="" style="width:100%; height:auto;">
+<img src="/Images/Completed recapping of Siemens FDD100 drives.webp" alt="" style="width:60%; height:auto;">
 </div>
 
 - Shugart SA801R drive power supply: 5600uf (50v), 4700uf (25v), 470uf (25v), 5.6uf (50v) and 6.8uf (5v). This floppy drive has been 100% reliably from 1981 to date but I didn't want to take any more chances with the tantalums and electrolytics in its linear power supply. 
@@ -74,15 +74,15 @@ It will probably look confusing from the photos as how I came to create this mul
 - The "Butterfly heatsink" is then attached to the original DJ2D 5v regulator heatsink with a small metal binder clip and some thermal paste. You can also see that I connected the binder clip handle to the "Butterfly heatsink" with a small piece of copper wire to prevent it from shorting out with the motherboard. Also, I had to remove, shorten and then re-attach the two handle arms of the binder clips to work in this setup (which was a real pain!). 
 
 <div style="text-align:center">
-<img src="/Images/Heatsink #1.webp" alt="" style="width:100%; height:auto;">
+<img src="/Images/Heatsink %231.webp" alt="" style="width:100%; height:auto;">
 </div>
 
 <div style="text-align:center">
-<img src="/Images/Heatsink #2.webp" alt="" style="width:100%; height:auto;">
+<img src="/Images/Heatsink %232.webp" alt="" style="width:100%; height:auto;">
 </div>
 
 <div style="text-align:center">
-<img src="/Images/Heatsink #3.webp" alt="" style="width:100%; height:auto;">
+<img src="/Images/Heatsink %233.webp" alt="" style="width:100%; height:auto;">
 </div>
 
 I thought that this was quite a creative solution to a problem which has long plagued this board. Now it runs cool. The only problem with this setup is that it forces the card to sit at the front of the motherboard due to its excessive height. 
@@ -100,11 +100,11 @@ What I chose to do is clean the shaft of the lead screws with a tooth brush and 
 What stumped me for an extended period of time was why the card was unstable, but fully functional, at the Sorcerer's stock 2Mhz speed and especially at my extended [3.1Mhz speed-up](<https://github.com/rcl9/Exidy-Sorcerer-Hardware-Speedup-Modification>). The card and system would also become unstable if I put the DJ2D card on a S-100 extender card, or added in my LS-100 RAMdisk card, and/or added in my S-100 expander I/O card. 
 
 <div style="text-align:center">
-<img src="/Images/Debugging stability issue.webp" alt="" style="width:100%; height:auto;">
+<img src="/Images/Debugging stability issue.webp" alt="" style="width:75%; height:auto;">
 </div>
 
 <div style="text-align:center">
-<img src="/Images/Debugging stability issue #2.webp" alt="" style="width:100%; height:auto;">
+<img src="/Images/Debugging stability issue %232.webp" alt="" style="width:75%; height:auto;">
 </div>
 
 It eventually came down to the following:
@@ -137,19 +137,19 @@ After I got the Morrow DJ2D system running in a stable manner I turned my attent
 - Both of these adapter boards work very well. This only "gotcha" is that you need to be wary of the "2-sided" jumper. The Morrow DJ2D card cannot determine if a virtual disk in the HxC emulator is single sided or double sided and hence this jumper needs to be manually set. What I've come to do with my generated HxC HFE disk image files is to always make them double-sided. 
 
 <div style="text-align:center">
-<img src="/Images/RCL9's 50pinto36pin adapter board.webp" alt="" style="width:100%; height:auto;">
+<img src="/Images/RCL9's 50pinto36pin adapter board.webp" alt="" style="width:75%; height:auto;">
 </div>
 
 <div style="text-align:center">
-<img src="/Images/Building the 50pinto36pin adapter board.webp" alt="" style="width:100%; height:auto;">
+<img src="/Images/Building the 50pinto36pin adapter board.webp" alt="" style="width:75%; height:auto;">
 </div>
 
 <div style="text-align:center">
-<img src="/Images/Connecting HxC emulator to Sorcerer.webp" alt="" style="width:100%; height:auto;">
+<img src="/Images/Connecting HxC emulator to Sorcerer.webp" alt="" style="width:75%; height:auto;">
 </div>
 
 <div style="text-align:center">
-<img src="/Images/Connecting HxC emulator to Sorcerer #2.webp" alt="" style="width:100%; height:auto;">
+<img src="/Images/Connecting HxC emulator to Sorcerer #2.webp" alt="" style="width:75%; height:auto;">
 </div>
 
 ## Capturing the Two PROM Chip Contents
@@ -159,7 +159,7 @@ For years I've had wanted to capture the contents of the two old 1970s era PROM 
 The following image shows how I connected my XGecu T48 EPROM programmer to each PROM chip for reading into the computer:
 
 <div style="text-align:center">
-<img src="/Images/Reading DJ2D PROMs.webp" alt="" style="width:100%; height:auto;">
+<img src="/Images/Reading DJ2D PROMs.webp" alt="" style="width:75%; height:auto;">
 </div>
 
 I've put together an archive of files for reference by future retro-computing enthusiasts:
