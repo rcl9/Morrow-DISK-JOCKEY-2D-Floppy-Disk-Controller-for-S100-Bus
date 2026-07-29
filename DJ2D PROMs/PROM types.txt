@@ -1,0 +1,86 @@
+6331, PROM 3D, 8 x 32 = 256 bit, 16 pin
+
+	6331 (on the schematics): MMI6331/82S123/74S288 
+	8x32 PROM - My board shows it as a Harris "M3-7603-5" (81-02)
+
+	6331 in the schematics
+	32-word x 8-bit bipolar PROM with Three-State (TS) outputs
+		MMI 6331
+		Signetics 882S123
+		National 74S288
+		Harris 7603
+		TI TBP18S030
+		AMD 27S19
+		OKI MSL8215
+
+1 - OUT -- D0 -- O1
+2 - OUT -- D1 -- O2
+3 - OUT -- D2 
+4 - OUT -- D3 
+5 - OUT -- D4 
+6 - OUT -- D5 
+7 - OUT -- D6
+8 - Gnd
+
+9 - OUT -- D7
+10 - IN -- A0 -- DD WINDOW
+11 - IN -- A1 - /DOUBLE
+12 - IN -- A2 - TRAND
+13 - IN -- A3 -- TRAN
+14 - IN -- A4 -- VCO
+15 - IN -- /CE -- CS (attached to Gnd)
+16 - Vcc
+
+Note: this chip is not open collector (Harris "M3-7603-5")
+
+----------------- 8C -- Address decoder
+
+6301, PROM 8C, 4 x 256 , 16 pin
+
+	Chip on the board:
+		AMD, AM27S20DC, Bipolar PROM, open collector ("20")
+
+		Tied high with either 1K or 330ohm resisters
+
+	6301 (on the schematics): 
+		MMI 6300/6301
+		Signetics 82S129
+		National 74S287
+		Harris 7611
+		TI TBP24S10
+		AMD 27S21
+		OKI MBL8521
+
+	This had an original label "Exidy 84 13" on it. It's unique to the Exidy Sorcerer. 
+	This does the address and I/O port decode for D000H
+
+1 - IN -- A6 -- MEMORY
+2 - IN -- A5 -- A15
+3 - IN -- A4 -- A14
+4 - IN -- A3 -- A13
+5 - IN -- A0 -- A10
+6 - IN -- A1 -- A11
+7 - IN -- A2 -- A12
+8 - Gnd
+
+9 - OUT -- D3 -- /SELECT
+10 - OUT -- D2 -- ROM I/O
+11 - OUT -- D1 -- RAM
+12 - OUT -- D0 -- BD SELECT
+13 - IN -- /CE1 - Gnd
+14 - IN -- /CE2 - Gnd
+15 - IN -- A7 -- BOARD ENBL
+16 - Vcc
+
+Note: outputs are open collector
+
+--------------------
+
+Bipolar proms : There are two "generations" of bipolar proms : pre-1978 and post-1978 (more or less...) .
+The difference is in the material used to create the fuses, and how much current you needed to "burn" those proms.
+
+First generation proms (Intersil, MMI, Fairchild ) were made of Nickel-Chrome (NiChrome/NiCr) and needed
+a lot of current to burn. Second generation proms (Signetics 82Sxxx series, AMD, TI, etc..)
+used titanium-tungsten (Ti-W) fuses, and were easier to program.
+
+Most programmers that do bipolar proms will only do "newer" generation proms. Unfortunately, those are getting very hard to find, and only "older" proms are more easily available for sale, and only a 29B will do those.
