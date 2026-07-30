@@ -65,6 +65,8 @@ This is a short list of what I did in this restoration process:
 
 Since purchase in 1981 the 5v regulator on the Morrow DJ2D card has run incredibly hot. I could literally cook an egg on it or burn my fingers. I was determined to resolve this issue once and for all so I came up with a concoction of add-on heat sinks, cobbled together from the parts I had removed from my Exidy Sorcerer and one metal binder clip. 
 
+Please note that a (possibly) more logical solution would be to replace one or more of the TO-220 regulators with modern switched mode equivalents. Some such 5v devices are the 1.5A TPSM84205EAB by Texas Instruments, the 3A PSU5a from ezSBC or the 1.5A S13V15F5 from Pololu. They are of generally low cost but do come with a higher international shipping cost. I wanted to keep this board "stock" from 1981. Also, at this time, I am unsure of the longevity and reliability of these SM PSU units and hence don't want to replace them, at the worst of times, 10 to 20 years into the future. I'll also mention that I have (fortunately) not had any of my 50 year old vintage equipment get fried due to a failed regulator; the only single failed regulator was the 12v in this Morrow DJ2D FDC card of late. All of my LM323s have also been doing fine. 
+
 It will probably look confusing from the photos as how I came to create this multi-heatsink setup:
 
 - The labelled "Butterfly heatsink" is a typical dual-wing 5v regulator heatsink with two mounting holes that I have bent flat one side (where I point out that the "heatsink is bent"). I have drawn a red line to show how the new shape of the heatsink from its side. 
